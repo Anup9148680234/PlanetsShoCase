@@ -52,21 +52,23 @@ const t1 = gsap.timeline({defaults: {duration:1}});
 t1.fromTo(mesh.scale,{z:0,x:0,y:0}, {z:1,x:1,y:1});
 
 
+let one = document.getElementById('h1_text');
+let two = document.getElementById('desc');
+let c1 = document.getElementById('content_one');
+let c2 = document.getElementById('content_two');
+let c3 = document.getElementById('content_three');
+let c4 = document.getElementById('content_four');
+let icon_linked = document.getElementById('icons');
 
 function SunApply(){
-  var one = document.getElementById('h1_text');
   one.innerText = "Sun"; 
-  var two = document.getElementById('desc');
   two.innerText = "The Sun is a yellow dwarf star, a hot ball of glowing gases at the heart of our solar system. Its gravity holds everything from the biggest planets to tiny debris in its orbit.";
-  var c1 = document.getElementById('content_one');
   c1.innerText = "0 Earth Days";
-  var c2 = document.getElementById('content_two');
   c2.innerText = "0 AU";
-  var c3 = document.getElementById('content_three');
   c3.innerText = "LATIN WORD: SOL";
-  var c4 = document.getElementById('content_four');
   c4.innerText = "0";
-  document.getElementById('icons').src = "/sun-icon.png";
+  icon_linked.src = "/sun-icon.png";
+
   scene.remove(ringmesh);
   const material = new THREE.MeshStandardMaterial({
     map: texture.load(p4),
@@ -79,19 +81,19 @@ function SunApply(){
 }
 
 function MercuryApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Mercury"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days."
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "88 Earth Days";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "0.4 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "ROMAN GOD OF SPEED";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "0";
-  document.getElementById('icons').src = "/mercury-icon.png";
+  icon_linked.src = "/mercury-icon.png";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
@@ -105,19 +107,19 @@ function MercuryApply() {
 }
 
 function VenusApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Venus"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "225 Earth Days";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "0.7 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "ROMAN GODDESS OF LOVE";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "0";
-  document.getElementById('icons').src = "/venus-icon.png";
+  icon_linked.src = "/venus-icon.png";
 
 
   scene.remove(sunpol);
@@ -132,19 +134,19 @@ function VenusApply() {
 }
 
 function EarthApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Earth"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "365.25 Earth Days";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "1 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "THE GROUND";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "1";
-  document.getElementById('icons').src = "/earth-icon.png";
+  icon_linked.src = "/earth-icon.png";
 
 
   scene.remove(sunpol);
@@ -158,19 +160,19 @@ function EarthApply() {
 }
 
 function MarsApply(){
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Mars"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "1.88 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "1.5 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "ROMAN GOD OF WAR";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "2";
-  document.getElementById('icons').src = "/mars-icon.png";
+  icon_linked.src = "/mars-icon.png";
 
   
   scene.remove(sunpol);
@@ -183,19 +185,19 @@ function MarsApply(){
 }
 
 function JupiterApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Jupiter"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "11.86 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "5.2 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "KING OF THE ROMAN GODS";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "79";
-  document.getElementById('icons').src = "/jupiter-icon.png";
+  icon_linked.src = "/jupiter-icon.png";
 
 
   scene.remove(sunpol);
@@ -210,19 +212,19 @@ function JupiterApply() {
 }
 
 function SaturnApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Saturn"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "29.45 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "9.5 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "FATHER OF JUPITER";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "62";
-  document.getElementById('icons').src = "/public/saturn-icon.png";
+  icon_linked.src = "/saturn-icon.png";
 
   scene.remove(sunpol);
   const material = new THREE.MeshStandardMaterial({
@@ -235,19 +237,19 @@ function SaturnApply() {
 }
 
 function UranusApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Uranus"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "84 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "19.8 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "GREEK GOD OF THE SKY";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "27";
-  document.getElementById('icons').src = "/public/uranus-icon.png";
+  icon_linked.src = "/uranus-icon.png";
 
 
   scene.remove(sunpol);
@@ -262,19 +264,19 @@ function UranusApply() {
 }
 
 function NeptuneApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Neptune"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "164.81 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "30.1 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "ROMAN GOD OF THE SEA";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "14";
-  document.getElementById('icons').src = "/public/neptune-icon.png";
+  icon_linked.src = "/neptune-icon.png";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
@@ -288,19 +290,19 @@ function NeptuneApply() {
 }
 
 function PlutoApply() {
-  var one = document.getElementById('h1_text');
+  
   one.innerText = "Pluto"; 
-  var two = document.getElementById('desc');
+  
   two.innerText = "Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the largest member of the Kuiper Belt and the best known of a new class of worlds called dwarf planets.";
-  var c1 = document.getElementById('content_one');
+  
   c1.innerText = "248.89 Earth years";
-  var c2 = document.getElementById('content_two');
+  
   c2.innerText = "39 AU";
-  var c3 = document.getElementById('content_three');
+  
   c3.innerText = "ROMAN GOD OF THE UNDERWORLD";
-  var c4 = document.getElementById('content_four');
+  
   c4.innerText = "5";
-  document.getElementById('icons').src = "/pluto-icon.png";
+  icon_linked.src = "/pluto-icon.png";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
