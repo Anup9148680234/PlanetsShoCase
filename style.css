@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body
+{
+  overflow: overlay;
+}
+
+nav{
+  text-decoration: none;
+  background-color: black;
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1{
+  font-size: 34px;
+  color: white;
+}
+
+button{
+  font-size: 36px;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+
+.links{
+  color: white;
+  background-color: black;
+  position: relative;
+  z-index: 100;
+  font-size: 22px;
+}
+
+#navbarTogglerDemo02{
+  margin-left: 10vw;
+}
+
+#home_text{
+  font-size: 34px;
+  font-weight: 900;
+}
+
+#lsip{
+  background-image: linear-gradient(to right,
+  #3b82f6,
+  #6366f1,
+  #a855f7,
+  #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+button:hover{
+  color: rgb(0, 255, 208);
+}
+
+.main_cont{
+  display: flex;
+  background: rgba(204, 204, 204, 0);;
+}
+
+.text_cont{
+  position: absolute;
+  left: 5vw;
+  top:15vh;
+  color: white;
+  background-color: rgba(18, 18, 18, 0.25);
+  max-width: 20vw;
+}
+
+#addText{
+  color: white;
+}
+
+.right_text{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 15vh;
+  right:1vw;
+  color: white;
+  max-width: 20vw;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.nav-item{
+  margin: 0 10px;
+}
+
+.content_one, .content_two, .content_three, .content_four{
+  font-size: 18px;
+}
+
+.line{
+  border: 2px solid gray;
+}
+
+#icons{
+  height: 25px;
+  width: 25px;
+  margin-bottom: -5px;
+}
+
+.title{
+  font-size: 44px;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  bottom: 2vh;
+  width: 100dvw;
+ text-align: center;
+}
+
+.title img{
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width:650px) {
+  #h1_text{
+    font-size: 16px;
+  }
+  #h3_text{
+    font-size: 14px;
+  }
+  #desc{
+    font-size: 12px;
+  }
+  .right_sub_cont{
+    font-size: 12px;
+  }
+
+  .right_text{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content_one, .content_two, .content_three, .content_four{
+    font-size: 12px;
+  }
+
+  #icons{
+    height: 15px;
+    width: 15px;
+    margin-bottom: 1px;
+  }
+
+  .links{
+    width: 20vw;
+    font-size: 20px;
+  }
+
+  #navbarTogglerDemo02{
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width:1000px) {
+  .links{
+    width: 25vw;
+    font-size: 24px;
+    margin-left: -15vw;
+  }
+
+}
