@@ -59,7 +59,8 @@ let c2 = document.getElementById('content_two');
 let c3 = document.getElementById('content_three');
 let c4 = document.getElementById('content_four');
 let icon_linked = document.getElementById('icons');
-let subtitle = document.getElementsByClassName('subtitle_class');            
+let subtitle = document.getElementById('subtitle_class');    
+console.log(subtitle.innerText);        
 
 function SunApply(){
   one.innerText = "Sun"; 
