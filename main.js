@@ -59,6 +59,7 @@ let c2 = document.getElementById('content_two');
 let c3 = document.getElementById('content_three');
 let c4 = document.getElementById('content_four');
 let icon_linked = document.getElementById('icons');
+let subtitle = document.getElementsByClassName('subtitle_class');            
 
 function SunApply(){
   one.innerText = "Sun"; 
@@ -68,6 +69,7 @@ function SunApply(){
   c3.innerText = "LATIN WORD: SOL";
   c4.innerText = "0";
   icon_linked.src = "/sun-icon.png";
+  subtitle.innerText = "YELLOW DWARF STAR";
 
   scene.remove(ringmesh);
   const material = new THREE.MeshStandardMaterial({
@@ -81,19 +83,14 @@ function SunApply(){
 }
 
 function MercuryApply() {
-  
   one.innerText = "Mercury"; 
-  
   two.innerText = "Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days."
-  
   c1.innerText = "88 Earth Days";
-  
   c2.innerText = "0.4 AU";
-  
   c3.innerText = "ROMAN GOD OF SPEED";
-  
   c4.innerText = "0";
   icon_linked.src = "/mercury-icon.png";
+  subtitle.innerText = "TERRESTRIAL PLANET";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
@@ -120,6 +117,7 @@ function VenusApply() {
   
   c4.innerText = "0";
   icon_linked.src = "/venus-icon.png";
+  subtitle.innerText = "TERRESTRIAL PLANET";
 
 
   scene.remove(sunpol);
@@ -147,6 +145,7 @@ function EarthApply() {
   
   c4.innerText = "1";
   icon_linked.src = "/earth-icon.png";
+  subtitle.innerText = "TERRESTRIAL PLANET";
 
 
   scene.remove(sunpol);
@@ -173,6 +172,7 @@ function MarsApply(){
   
   c4.innerText = "2";
   icon_linked.src = "/mars-icon.png";
+  subtitle.innerText = "TERRESTRIAL PLANET";
 
   
   scene.remove(sunpol);
@@ -198,6 +198,7 @@ function JupiterApply() {
   
   c4.innerText = "79";
   icon_linked.src = "/jupiter-icon.png";
+  subtitle.innerText = "GAS GIANT";
 
 
   scene.remove(sunpol);
@@ -225,6 +226,7 @@ function SaturnApply() {
   
   c4.innerText = "62";
   icon_linked.src = "/saturn-icon.png";
+  subtitle.innerText = "GAS GIANT";
 
   scene.remove(sunpol);
   const material = new THREE.MeshStandardMaterial({
@@ -250,7 +252,7 @@ function UranusApply() {
   
   c4.innerText = "27";
   icon_linked.src = "/uranus-icon.png";
-
+  subtitle.innerText = "ICE GIANT";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
@@ -277,6 +279,7 @@ function NeptuneApply() {
   
   c4.innerText = "14";
   icon_linked.src = "/neptune-icon.png";
+  subtitle.innerText = "ICE GIANT";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
@@ -303,6 +306,7 @@ function PlutoApply() {
   
   c4.innerText = "5";
   icon_linked.src = "/pluto-icon.png";
+  subtitle.innerText = "DWARF PLANET";
 
   scene.remove(sunpol);
   scene.remove(ringmesh);
