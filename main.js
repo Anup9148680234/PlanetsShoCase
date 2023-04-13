@@ -8,9 +8,9 @@ import sun7 from '/src/sun.jpg';
 import mercury7 from '/src/mercury.jpg';
 import venus7 from '/src/venus1.jpg';
 import jupiter7 from '/src/jupiter.jpg';
-import saturn7 from '/src/saturn.png';
+import saturn7 from '/src/saturn.jpg';
 import uranus7 from '/src/uranus.jpg';
-import neptune7 from '/src/neptune.png';
+import neptune7 from '/src/neptune.jpg';
 import ring from '/src/rings.png';
 import {gsap} from 'gsap';
 
