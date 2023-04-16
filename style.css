@@ -213,6 +213,11 @@ button:hover{
     font-size: 24px;
     margin-left: -1vw;
   }
+
+  .right_text{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media (min-width:1000px) {
@@ -237,5 +242,9 @@ button:hover{
     height: 18px;
     width: 18px;
     margin-bottom: 1px;
+  }
+
+  .right_text{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
