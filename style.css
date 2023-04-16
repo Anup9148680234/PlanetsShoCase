@@ -221,4 +221,21 @@ button:hover{
     font-size: 20px;
     margin-left: 0vw;
   }
+  #h1_text{
+    font-size: 32px;
+  }
+  #h3_text{
+    font-size: 18px;
+  }
+  #desc{
+    font-size: 16px;
+  }
+  .right_sub_cont{
+    font-size: 16px;
+  }
+  #icons{
+    height: 18px;
+    width: 18px;
+    margin-bottom: 1px;
+  }
 }
