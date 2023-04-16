@@ -48,8 +48,7 @@ const geometryring = new THREE.RingGeometry(6, 10, 64, 64);
 geometryring.rotateX(1.6);
 const ringmesh = new THREE.Mesh(geometryring,ringmaterial);
 
-const t1 = gsap.timeline({defaults: {duration:1}});
-t1.fromTo(mesh.scale,{z:0,x:0,y:0}, {z:1,x:1,y:1});
+gsap.fromTo(mesh.scale,{z:0,x:0,y:0}, {z:1,x:1,y:1,duration:2});
 
 
 let one = document.getElementById('h1_text');
@@ -80,7 +79,6 @@ function SunApply(){
   scene.add(mesh);
   console.log('sun apllied');
   scene.add(sunpol);
-
 }
 
 function MercuryApply() {
